@@ -1,38 +1,107 @@
-.App {
+body {
+  display: block;
+  background-color: white;
+  flex-wrap: wrap;
+}
+.weatherbody {
+  display: block;
+  background: linear-gradient(
+    112deg,
+    #6fa5bb 9%,
+    rgb(246, 204, 198) 55%,
+    rgb(255, 127, 115) 100%,
+    rgb(139, 102, 241) 100%
+  );
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 10px 0;
+  border-radius: 20px;
+  color: black;
+  width: 65%;
+  padding: 30px;
+  margin: 30px auto;
+  background-repeat: no-repeat, no-repeat;
+  font-family: Arial, Helvetica, sans-serif;
+}
+input[type="text"] {
+  border-radius: 4px;
+  margin: 8px 0;
+  box-sizing: border-box;
   text-align: center;
+  font-size: 30px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid #757575;
+}
+input::placeholder {
+  font-weight: bold;
+  opacity: 0.5;
+  color: black;
+  font-size: 18px;
+}
+.fg--search button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 28px;
+  padding: 5px 5px;
+  z-index: 2;
+}
+h1 {
+  font-size: 20px;
+  margin: 0 auto;
+  font-weight: bold;
+}
+ul {
+  font-size: 20px;
+  margin: 0 auto;
+}
+.card {
+  border: 1px solid #ffffff;
+  padding: 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 10px 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-header {
+  text-align: center;
+  font-weight: bold;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card-body {
+  text-align: center;
+  font-size: 15px;
+  padding: 10px 15px 15px 15px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cloudy {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+.rainy {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cloudsun {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 10px;
+}
+.weather-temperature img {
+  margin-right: 5px;
+  height: 64px;
+  width: 64px;
+}
+.weather-temperature strong {
+  color: rgb(33, 33, 33);
+  font-size: 60px;
+  line-height: 1;
+  font-weight: 400;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+small {
+  display: block;
+  margin-top: 20px;
 }
